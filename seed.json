@@ -2,20 +2,15 @@
     "addressBook": {
         "address1": {
             "name": "Bao",
-            "street": "123 main st",
-            "city": "nashville",
-			"state": "TN",
-			"zip": "37211",
-			"tel": "615-123-1234"
+            "addressLine1": "123 main st",
+            "addressLine2": "Nashville Tn 37211",
+         	"tel": "615-123-1234"
         },
 		"address2": {
             "name": "David",
-            "street": "123 main st",
-            "city": "nashville",
-			"state": "TN",
-			"zip": "37211",
-			"tel": "615-123-1234"
+            "addressLine1": "456 main st",
+            "addressLine2": "Nashville Tn 37211",
+            "tel": "615-123-1234"
         }
-        
     }
 }

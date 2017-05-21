@@ -1,12 +1,17 @@
-<h2>New To do</h3>
-	<form>
-		<div class="form-group">
-			<label>Task Description</label>
-			<input type="text" class="form-control" placeholder="Some important task" ng-model="newTask.task"/>
-		</div>
-		<div class="form-group">
-			<label>Assigned To</label>
-			<input type="text" class="form-control" placeholder="Zoe" ng-model="newTask.assignedTo"/>
-		</div>
-		<button class="btn btn-default" ng-click="addNewItem()">Submit</button>
-	</form>
+
+
+<form>
+  <div class="form-group">
+    <input type="text" class="form-control" ng-model="addressBook.name" />
+  </div>
+  <div class="form-group">
+    <input type="text" class="form-control" ng-model="addressBook.addressLine1" />
+  </div>
+  <div class="form-group">
+    <input type="text" class="form-control" ng-model="addressBook.addressLine2" />
+  </div>
+  <div class="form-group">
+    <input type="text" class="form-control" ng-model="addressBook.tel" />
+  </div>
+  <button class="btn btn-success" ng-click="addItem()">Submit</button>
+</form>

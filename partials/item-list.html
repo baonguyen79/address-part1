@@ -4,13 +4,16 @@
   <div class="panel panel-default">
     <div class="panel-body">
       <!-- <div class="col-xs-8"><a ng-href="#!/item/view/{{item.id}}">{{item.id}}</a></div> -->
-      <div class="col-xs-8 col-xs-offset-1">{{item.name}} <a href="#{{item.id}}"></a></div>
-      <div class="col-xs-10 col-xs-offset-1">{{item.street}}</div> 
-      <div class="col-xs-12 col-xs-offset-1">{{item.city}} {{item.state}} {{item.state}}</div>
+      <div class="col-xs-8 col-xs-offset-1">{{item.name}} <a href="#{{item}}"></a></div>
+      <div class="col-xs-10 col-xs-offset-1">{{item.addressLine1}}</div> 
+      <div class="col-xs-12 col-xs-offset-1">{{item.addressLine2}}</div>
       <div class="col-xs-10 col-xs-offset-1">Tel: {{item.tel}}    
         <button class="btn btn-danger pull-right col-xs-2 col-xs-offset-1" ng-click="deleteItem(item.id)">Delete</button>
-        <button class="btn btn-success pull-right col-xs-2 col-xs-offset-1" ng-click="changeItem(item.id)">Change</button>
+        <a class="btn btn-success pull-right col-xs-2 col-xs-offset-1" ng-href="#!/item/edit/{{item.id}}">Edit</a>
       </div>
     </div>
   </div>
 </div>
+
+
+<!-- <button class="btn btn-warning"><a ng-href="#!/item/edit/{{selectedItem.id}}">Edit</a></button> -->

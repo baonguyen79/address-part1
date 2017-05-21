@@ -1,12 +1,15 @@
 app.controller("ItemNewCtrl", function($http, $location, $q, $scope, FIREBASE_CONFIG, ItemFactory) {
 
-$scope.addNewItem = () => {
-    $scope.newTask.isCompleted = false;
-    ItemFactory.postNewItem($scope.newTask).then(() => {
-      $scope.newTask = {};
+$scope.addItem = () => {
+    console.log("addItem" , $scope.addressBook);
+    ItemFactory.postNewItem($scope.addressBook)
+    .then(() => {
       $location.url("/items/list");
+      $scope.Item = {};
     }).catch((error) => {
       console.log("Add error", error);
     });
   };
 });
+
+
